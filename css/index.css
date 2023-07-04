@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  text-decoration: none;
+  font-size: 16px;
+  color: blue;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.pager-container {
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+  user-select: none;
+}
+.pager-head,
+.pager-body,
+.pager-foot {
+  display: inline-block;
+  margin: 0 10px;
+}
+.pager-number {
+  width: 50px;
+}
+.pager-item.active {
+  color: red;
+  border: none;
+}
+.pager-first-page.disabled,
+.pager-prev.disabled,
+.pager-next.disabled,
+.pager-last-page.disabled {
+  color: #bbb;
+  cursor: not-allowed;
+}
